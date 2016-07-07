@@ -10,6 +10,11 @@ import com.tianbao54.mapper.MyBatisMapper;
 import com.tianbao54.model.User;
 import com.tianbao54.service.MyBatisService;
 
+/**
+ * 
+ * @author Yuppy
+ *
+ */
 @Service("myBatisService")
 public class MyBatisServiceImpl implements MyBatisService{
 
