@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">3301011</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hibernate</property>
+		<property name="show_sql">true</property>
+		<property name="format_sql">false</property>
+		<!-- <mapping class="com.tianbao54.hibernate.ontoone.primarykey.model.Student"/> 
+			<mapping class="com.tianbao54.hibernate.ontoone.primarykey.model.Address"/> -->
+		<!-- <mapping class="com.tianbao54.hibernate.ontoone.foreignkeyassociations.model.Student" />
+		<mapping class="com.tianbao54.hibernate.ontoone.foreignkeyassociations.model.Address" /> -->
+<!-- 	<mapping class="com.tianbao54.hibernate.ontoone.bidirectional.primarykey.model.Student" />
+		<mapping class="com.tianbao54.hibernate.ontoone.bidirectional.primarykey.model.Address" /> -->
+		<!-- <mapping class="com.tianbao54.hibernate.manytoone.unidirectional.model.Student" />
+		<mapping class="com.tianbao54.hibernate.manytoone.unidirectional.model.University" /> -->
+		<!-- <mapping class="com.tianbao54.hibernate.manytoone.bidirectional.model.Student" />
+		<mapping class="com.tianbao54.hibernate.manytoone.bidirectional.model.University" /> -->
+		<!-- <mapping class="com.tianbao54.hibernate.manytomany.unidirectional.model.Student" />
+		<mapping class="com.tianbao54.hibernate.manytomany.unidirectional.model.Subject" /> -->
+		<mapping class="com.tianbao54.hibernate.manytomany.bidirectional.model.Student" />
+		<mapping class="com.tianbao54.hibernate.manytomany.bidirectional.model.Subject" />
+	</session-factory>
+</hibernate-configuration>
